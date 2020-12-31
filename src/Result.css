@@ -1,0 +1,124 @@
+.global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+.firstPart {
+    width: 45%;
+    margin:3%;
+}
+.secondPart {
+    height: 70%;
+    width: 45%;
+    margin:3%;
+}
+.WordCloud {
+  background: content-box radial-gradient(rgb(255, 255, 255),rgb(225, 235, 235));
+  border: solid 5px;
+  border-radius: 100%;
+}
+/*
+import React from 'react'
+import {useState,  useEffect, useRef } from 'react'
+import logo from './logo.svg';
+import './Searchbar.css'
+import './App.css'
+//import Searchbar from './Searchbar'
+import Rs from './Result'
+import firebase from './FireStore'
+
+
+
+function App() {
+
+  function submitRequestF(){
+    let result=[]
+    let splitRequest=inputRef.current.value.split(" ")
+    let words=splitRequest.filter(word=>word.length>0)
+// firstMode
+
+    words.forEach(word=>{
+      // get the first part of word request
+      let firstPartR = word.substr(0, word.length / 2)  
+      // get the second part of word request
+      let secondPartR = word.substr(word.length / 2, word.length)
+      data.forEach(e=>{
+      // get the first part of word bdd
+      let firstPartW = e.data.text.substr(0, e.data.text.length / 2)  
+      // get the second part of word bdd
+      let secondPartW = e.data.text.substr(e.data.text.length / 2, e.data.text.length)
+
+      //count
+      let count=0
+      for (let i = 0; i < firstPartR.length; i++) {
+        if(firstPartW.includes(firstPartR.charAt(i))){
+        count=count+1
+        }
+      }
+      for (let i = 0; i < secondPartR.length; i++) {
+        if(secondPartW.includes(secondPartR.charAt(i))){
+          count=count+1
+        }
+      }
+      if(word.length-count<2){
+        
+        result.push(e)
+      }
+
+    })  
+      //console.log("data "+doc.data().text.length,"count "+count,"request "+sentence.length)
+    })
+    setResult(result)
+    
+// ens firstmode
+ 
+  }
+  const inputRef=useRef(null)
+  const [data, setData]=useState([])
+  const [Result, setResult]=useState([])
+    firebase.firestore().collection("WordsWeights")
+    .onSnapshot((data)=>{
+      let tab = []
+      data.forEach((word) => {
+        tab.push({
+          id: word.id,
+          data: word.data(),
+        });
+      });
+      setData(tab)
+    })
+
+
+  return(
+    <div >
+      <header className="App-header">
+      <React.Fragment>
+        <div className="logo">
+          <img src={logo} className="App-logo" alt="logo" />
+          <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></img>
+        </div>
+        <div className="bar">
+          <input class="searchbar" type="text" title="Search" ref={inputRef}></input>
+          <a href="#"> <img className="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></img></a>
+        </div>
+        <div className="buttons">
+          <button className="button" type="submit" onClick={submitRequestF}>Recherche</button>
+         </div>
+    </React.Fragment>
+    <div className="results">
+      {
+        Result.map((link,key)=>(
+          <Rs link={link} data={data}></Rs>
+  ))
+      }
+    </div>
+    </header>
+    </div>
+  )
+  
+}
+
+export default App;
+
+*/
