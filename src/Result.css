@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #ffffff;
 }
 .firstPart {
     width: 45%;
     margin:3%;
+    border-radius: 10%;
 }
 .secondPart {
     height: 70%;
@@ -14,10 +14,41 @@
     margin:3%;
 }
 .WordCloud {
-  background: content-box radial-gradient(rgb(255, 255, 255),rgb(225, 235, 235));
   border: solid 5px;
-  border-radius: 100%;
+  border-radius: 10%;
 }
+.Footer {
+  display: flex;
+  flex-direction: row; 
+  color: black;
+
+}
+
+.results {
+  margin-top: 5%;
+}
+.myButton {
+	background-color:#44c767;
+	border-radius:2px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	font-size:18px;
+	padding:1px 10px;
+	text-decoration:none;
+	text-shadow:2px -2px 50px #2f6627;
+}
+.myButton:hover {
+  background-color:#ffffff;
+  color: black;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 /*
 import React from 'react'
 import {useState,  useEffect, useRef } from 'react'

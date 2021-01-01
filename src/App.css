@@ -1,11 +1,16 @@
 .App {
   text-align: center;
-  background-color: #ffffff;
+  background: content-box radial-gradient(rgb(255, 255, 255),rgb(0, 0, 0));
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/form-bk.jpg") no-repeat ;
+  background-size: cover;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
+  background:rgba(0,0,0,0.01);
+  padding: 0px 0px;
+  border-radius: 10%; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +20,6 @@
 }
 
 .App-header {
-  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,3 +41,29 @@
     transform: rotate(360deg);
   }
 }
+ul {
+  list-style: none;
+}
+
+/* NAV BAR */
+#nav_bar {
+  float: right;
+}
+
+#nav_bar li {
+  display: inline-block;
+  padding: 8px;
+}
+
+#nav_bar #sign_in {
+  background: #4887ef; 
+  margin-right: 25px;
+  padding: 7px 15px;
+  border-radius: 3px; 
+  font-weight: bold;
+}
+
+.nav-links {
+  color: #404040;
+}
+
